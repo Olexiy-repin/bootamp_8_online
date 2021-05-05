@@ -60,12 +60,19 @@ img {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 250ms linear;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+}
+
+.modal-btn-theme-light {
+  color: #303030;
 }
 
 .social-links-list {
@@ -93,6 +100,7 @@ img {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
+  transition: color 250ms linear;
 }
 
 .social-links-list-link:hover,
@@ -181,6 +189,7 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
+  transition: background-color 250ms linear;
 }
 
 .social-list-link:hover,
@@ -191,6 +200,7 @@ img {
 .social-list-icon {
   width: 20px;
   height: 20px;
+  transition: fill 250ms linear;
 }
 
 .social-list-link:hover .social-list-icon,
@@ -201,6 +211,8 @@ img {
 
 /* =================== HEADER =================== */
 .header {
+  position: absolute;
+  width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -213,6 +225,11 @@ img {
 .navigation {
   display: flex;
   align-items: center;
+}
+
+.logo {
+  animation-duration: 1000ms;
+  animation-iteration-count: 2;
 }
 
 .logo-img {
@@ -234,8 +251,8 @@ img {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-
-  /* color: #ffffff; */
+  color: #ffffff;
+  transition: color 250ms linear;
 }
 
 .menu-link:hover,
@@ -265,7 +282,16 @@ img {
 }
 
 .hero-left-side {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 26px;
+  padding-bottom: 40px;
   width: 100px;
+}
+
+.hero-left-side .social-links-list {
+  transform: rotate(-90deg);
+  transform-origin: left top;
 }
 
 .hero-right-side {
@@ -556,3 +582,43 @@ calc((100% - 120px) / 4);
   color: #9da4bd;
 }
 /* =================== END FOOTER  =================== */
+
+/* =================== BACKDROP  =================== */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 500ms linear;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 580px;
+  background-color: #ffffff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+/* =================== END BACKDROP  =================== */
