@@ -591,17 +591,28 @@ calc((100% - 120px) / 4);
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: all 500ms linear;
+  transition: all 500ms linear 0ms;
+}
+
+.backdrop.is-hidden {
+  transition: all 500ms linear 500ms;
 }
 
 .modal {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1) rotate(360deg);
   width: 528px;
   height: 580px;
   background-color: #ffffff;
+
+  transition: transform 500ms linear 500ms;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0) rotate(0deg);
+  transition: transform 500ms linear 0ms;
 }
 
 .close-btn {
