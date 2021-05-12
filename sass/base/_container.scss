@@ -11,8 +11,8 @@
     display: flex;
   }
 
-  .header &,
   .footer & {
-    @extend %align;
+    display: flex;
+    align-items: center;
   }
 }
