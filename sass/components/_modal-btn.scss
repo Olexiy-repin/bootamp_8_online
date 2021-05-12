@@ -2,9 +2,7 @@
   padding: 12px 20px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
+  @include font(12px, 600, 16px);
   letter-spacing: 0.09em;
   text-transform: uppercase;
   background-color: transparent;

@@ -13,7 +13,6 @@
 
   .header &,
   .footer & {
-    display: flex;
-    align-items: center;
+    @extend %align;
   }
 }

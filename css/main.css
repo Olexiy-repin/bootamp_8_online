@@ -16,6 +16,12 @@
   overflow: hidden;
 }
 
+.header .container,
+.footer .container, .modal-form-term-desc {
+  display: flex;
+  align-items: center;
+}
+
 body {
   font-family: var(--main-font);
 }
@@ -62,12 +68,6 @@ img {
   display: flex;
 }
 
-.header .container,
-.footer .container {
-  display: flex;
-  align-items: center;
-}
-
 .section {
   padding-top: 130px;
   padding-bottom: 130px;
@@ -77,8 +77,8 @@ img {
   padding: 12px 20px;
   border: 1px solid #ff6c00;
   border-radius: 25px;
-  font-weight: 600;
   font-size: 12px;
+  font-weight: 600;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -183,8 +183,8 @@ img {
 }
 
 .description {
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
@@ -363,8 +363,6 @@ img {
 }
 
 .modal-form-term-desc {
-  display: flex;
-  align-items: center;
   font-size: 12px;
 }
 

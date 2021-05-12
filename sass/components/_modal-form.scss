@@ -56,8 +56,7 @@
 }
 
 .modal-form-term-desc {
-  display: flex;
-  align-items: center;
+  @extend %align;
   font-size: 12px;
 
   &::before {
