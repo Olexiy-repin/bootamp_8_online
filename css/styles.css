@@ -1,0 +1,102 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  /* background-color: tomato; */
+}
+
+/* ========== MIN-WIDTH MAX-WIDTH ========== */
+/* Если ширина вьюпорта 400px или больше, применить правила внутри */
+/* @media (min-width: 400px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* Если ширина вьюпорта 768px или больше, применить правила внутри */
+/* @media (min-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
+
+/* Когда ширина вьпорта от 0 и до 768px, применять правила внутри */
+/* @media (max-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
+
+/* Когда ширина вьпорта от 0 и до 500px, применять правила внутри */
+/* @media (max-width: 500px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* ========== AND ========== */
+/* 280 - 767 */
+/* @media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    background-color: teal;
+  }
+} */
+
+/* 0 - 767 */
+/* @media (max-width: 767px) {
+  body {
+    background-color: teal;
+  }
+} */
+/* ========== OR ========== */
+/* @media (max-width: 767px), (min-width: 1200px) {
+  body {
+    background-color: khaki;
+  }
+} */
+/* ========== TYPES ========== */
+/* 
+  all
+  screen 
+  print
+*/
+/* @media print {
+  .menu {
+    display: none;
+  }
+
+  .modal-btn {
+    display: none;
+  }
+} */
+/* ========== ORIENTATION ========== */
+/* @media screen and (orientation: landscape) and (max-width: 767px) {
+  body {
+    background-color: yellowgreen;
+  }
+} */
