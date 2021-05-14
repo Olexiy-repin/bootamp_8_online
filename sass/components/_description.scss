@@ -1,6 +1,10 @@
 .description {
-  @include font(18px, 400, 30px);
+  @include font(16px, 400, 26px);
   letter-spacing: 0.02em;
+
+  .hero & {
+    max-width: 272px;
+  }
 
   .about & {
     margin-bottom: 20px;
@@ -8,10 +12,6 @@
 
   .advantages & {
     max-width: 464px;
-  }
-
-  .hero & {
-    max-width: 400px;
   }
 }
 
@@ -21,4 +21,22 @@
 
 .description-theme-light {
   color: #555555;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    .hero & {
+      max-width: 356px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .description {
+    @include font(18px, 400, 30px);
+
+    .hero & {
+      max-width: 400px;
+    }
+  }
 }

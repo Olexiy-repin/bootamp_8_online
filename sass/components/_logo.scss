@@ -1,9 +1,16 @@
 .logo {
   animation-duration: 1000ms;
   animation-iteration-count: 2;
+  fill: #ffffff;
 
   &__img {
     width: 68px;
     height: 54px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    fill: #303030;
   }
 }

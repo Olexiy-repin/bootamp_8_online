@@ -1,0 +1,44 @@
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100vw;
+    max-width: 480px;
+    height: 100vh;
+    transform: translateX(-50%) translateY(-100%);
+    padding: 48px 40px;
+
+    background-color: bisque;
+    transition: transform 500ms linear 0ms, box-shadow 500ms linear 500ms;
+
+    &__close {
+      position: absolute;
+      top: 48px;
+      right: 31px;
+      width: 40px;
+      height: 40px;
+      border: none;
+      padding: 0;
+      background-color: transparent;
+    }
+
+    &__close-icon {
+      width: 40px;
+      height: 40px;
+      fill: #303030;
+    }
+  }
+
+  .is-open {
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7);
+    transform: translateX(-50%) translateY(0%);
+    transition: transform 500ms linear 500ms, box-shadow 500ms linear 0ms;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
